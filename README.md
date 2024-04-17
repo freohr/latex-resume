@@ -1,1 +1,1 @@
-# latex-resume
+# Personal Resume in LaTeX
