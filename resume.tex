@@ -1,7 +1,16 @@
 \documentclass[11pt, a4paper]{moderncv}
 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+
 \moderncvstyle{classic}
 \moderncvcolor{green}
+
+% \setmainfont{Liberation Serif}
+\setmainfont{Iosevka Nerd Font}
+\pagenumbering{arabic}
 
 \usepackage[scale=0.85]{geometry}
 \setlength{\footskip}{149.60005pt}
@@ -12,7 +21,6 @@
 \email{faure.stephen@gmail.com}
 
 \social[github]{freohr}
-
 \begin{document}
 \makecvtitle
 
@@ -22,7 +30,7 @@
   \item Développement d'une Solution de Contrôle et de Pilotage à distance d'une flotte de véhicules connectés via une application embarquée en C++/Qt connectée à une plateforme web via les outils IoT du cloud Microsoft Azure
   \begin{itemize}
     \item Solution sur boitier embarqué en C++11 et Qt5, connectée à la plateforme IotHub de Microsoft Azure via MQTT
-    \item Contrôle et Pilotage du véhicule industriel via réseau CAN embarqué, antenne GPS pour monitoring et geofencing, \dots
+    \item Contrôle et Pilotage du véhicule industriel via réseau CAN embarqué, antenne GPS \& GSM pour monitoring et geofencing, \dots
   \end{itemize}
 \end{itemize}
 \medskip
@@ -43,13 +51,51 @@
 \medskip
 \cventry{2014/09--2016/08}{Développeur (Alternance)}{Netapsys}{Lyon}{}{}
 \begin{itemize}
-  \item Durant Master en Ingénierie Numérique. Travail sur différents projets en C\#/ ASP.NET ainsi que C++/Qt : Développement des applications, créations des tests, écritures des documentations.
+  \item Durant \textit{Master en Ingénierie Numérique}. Travail sur différents projets en C\#/ ASP.NET ainsi que C++/Qt : Développement des applications, créations des tests, écritures des documentations.
 \end{itemize}
-
-\section{Compétences}
 
 \section{Études}
 \cventry{2014-2016}{Master en Ingénierie du Logiciel pour la Société Numérique}{CERI}{Université d'Avignon}{}{Formation avancée en Alternance en Développement Logiciel : Développement Web (Webservices, J2EE), Datamining, Business Intelligence (Talend), Machine Learning, \dots}
 \cventry{2010-2014}{Licence en Informatique et Développement Logiciel}{UCBL}{Université Lyon 1}{}{Bases en Informatique : Développement logiciel, Gestions des Réseaux, Fonctionnement des composants informatiques, \dots}
+
+\pagebreak
+
+\section{Compétences}
+
+\begin{multicols}{2}
+  
+\begin{itemize}
+  \item Développement embarqué:
+    \begin{itemize}
+      \item Langage C++14, Framework Qt5
+      \item Communication CAN, DBus et MQTT
+    \end{itemize}
+  \item Développement Web
+  \begin{itemize}
+    \item Langage JS ES6, HTML \& CSS
+  \end{itemize}
+\item Langages
+\begin{itemize}
+  \item Français: natif
+  \item \raggedright{Anglais: bilingue (lu, écrit, parlé, \textasciitilde{}niveau B2)}
+\end{itemize}
+  \columnbreak
+\item Outils logiciels annexes
+  \begin{itemize}
+    \item SQL
+    \item RegEx
+    \item LaTeX
+    \item Git \& CI/CD
+    \item Bash
+  \end{itemize}
+\end{itemize}
+\end{multicols}
+
+\section{Projects personnels}
+
+\begin{itemize}
+  \item \textbf{\href{https://github.com/freohr/rolltable)}{rolltable \faIcon{external-link-alt}}}: Outil CLI en python pour tirer des résultats aléatoires sur des tables thématiques pour le JDR. Supporte tables récursives (avec options) et formules inline.
+  \item \textbf{\href{https://github.com/freohr/13a-monster-reformatter}{Monster Reformatter pour 13th Age \faIcon{external-link-alt}}}: Outil web en JS ES6 pour parser et reformatter les blocs-stat de monstres pour le JDR 13th Age.
+\end{itemize}
 
 \end{document}
